@@ -1,6 +1,8 @@
 // 11ty configuration
 module.exports = (config) => {
-  // 11ty defaults
+  config.addPassthroughCopy("./src/css/");
+  config.addWatchTarget("./src/css/");
+
   return {
     dir: {
       input: "src",
