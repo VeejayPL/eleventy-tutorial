@@ -1,3 +1,3 @@
-const msg = "Hello World";
+import { msg } from "./msg.js";
 
 console.log(msg);
