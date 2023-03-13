@@ -10,28 +10,11 @@
   </head>
   <body>
   <div class="content">
-  <header class="header">
-    <h1 class="header-title">
-      <a href="/">Wojciech Jurkowski</a>
-    </h1>
-    <ul class="header-links">
-      <li>
-        <a class="header-link" href="/about">About</a>
-      </li>
-      <li>
-        <a class="header-link" href="/projects">Projects</a>
-      </li>
-      <li>
-        <a class="header-link" href="/contact">Contact</a>
-      </li>
-    </ul>
-	</header>
-  <main class="main">
+    {% include "header.njk" %}
+  <main class="main container">
       {{ content | safe }}
   </main>
   </div>
-  <footer class="footer">
-  	<p>&copy; Wojciech Jurkowski 2023</p>
-  </footer>
+  {% include "footer.njk" %}
   </body>
 </html>
